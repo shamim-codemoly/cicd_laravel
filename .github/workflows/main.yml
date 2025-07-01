@@ -22,5 +22,5 @@ jobs:
           port: 22
           script: |
             cd /var/www/cicd
-            chmod +x main_deplyer.sh
-            ./main_deplyer.sh
+            chmod +x main_deployer.sh
+            ./main_deployer.sh
