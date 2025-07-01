@@ -29,6 +29,8 @@ class CategoryController extends Controller
         }
         return $this->ResponseSuccess($categorys, $metadata);
     }
+
+
     
 
     public function index(Request $request)
