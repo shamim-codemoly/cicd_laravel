@@ -32,8 +32,6 @@ class CategoryController extends Controller
 
 
 
-    
-
     public function index(Request $request)
     {
         $perPage = request('per_page') ?? config('app.per_page');
