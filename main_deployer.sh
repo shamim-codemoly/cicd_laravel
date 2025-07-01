@@ -15,6 +15,7 @@ echo "Deploying application ..."
 chmod -R 777 storage
 # npm run build
 
+
 # php artisan optimize:clear
 # php artisan cache:clear
 # echo "Application deployed!"
