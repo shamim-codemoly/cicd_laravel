@@ -21,4 +21,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/cicd && main_deplyer.sh
+            cd /var/www/cicd/ && ./main_deplyer.sh
