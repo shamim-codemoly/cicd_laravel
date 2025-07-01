@@ -8,7 +8,7 @@ echo "Deploying application ..."
     # Update codebase
     git pull origin dev
     # Exit maintenance mode
-php artisan up
+# php artisan up
 # php artisan migrate --force
 # php artisan passport:client --personal --name="ib" --no-interaction
 # php artisan passport:keys --force
