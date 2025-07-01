@@ -21,4 +21,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            git clone git@github.com:shamim-codemoly/cicd_laravel.git /var/www/shamim
+            cd /var/www/cicd
+            chmod +x main_deplyer.sh
+            ./main_deplyer.sh
