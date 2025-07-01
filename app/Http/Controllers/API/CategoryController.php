@@ -30,7 +30,6 @@ class CategoryController extends Controller
         return $this->ResponseSuccess($categorys, $metadata);
     }
 
-    
     public function index(Request $request)
     {
         $perPage = request('per_page') ?? config('app.per_page');
