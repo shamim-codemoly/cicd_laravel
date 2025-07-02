@@ -9,6 +9,12 @@
 
 set -euo pipefail
 
+# Check number of arguments
+if [ "$#" -ne 4 ]; then
+  echo "Usage: $0 domain port email config"
+  exit 1
+fi
+
 # Color definitions
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -110,7 +116,6 @@ sudo systemctl reload nginx
 # Get SSL Certificate
 echo -e "${YELLOW}Issuing SSL Certificate with Certbot...${NC}"
 sudo certbot --nginx -d "${DOMAIN}" --non-interactive --agree-tos -m "${EMAIL}"
-
 
 # =============================================
 # Completion Banner
