@@ -84,7 +84,7 @@ echo -e "${GREEN}Starting GTM Server Deployment...${NC}"
 
 # Launch Docker GTM Container
 echo -e "${YELLOW}Launching Docker container...${NC}"
-docker run -d \
+sudo docker run -d \
   --restart unless-stopped \
   -p "${PORT}:8080" \
   -e CONTAINER_CONFIG="${CONFIG}" \
