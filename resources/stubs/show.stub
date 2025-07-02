@@ -1,7 +1,0 @@
-<x-master-layout title="{{ ucfirst('product') }}">
-    <div class="grid grid-cols-1 gap-2">
-        <div class="-m-1.5 overflow-x-auto">
-            Show Page
-        </div>
-    </div>
-</x-master-layout>
