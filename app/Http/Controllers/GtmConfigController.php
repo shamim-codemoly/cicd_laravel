@@ -10,6 +10,7 @@ class GtmConfigController extends Controller
 {
     public function gtmServerContainerConfig(Request $request)
     {
+        
         $domain = $request->input('gtm_sub_domain_name');
         $port = $this->getNextAvailablePort();
         $email = $request->input('gtm_ssl_email');
