@@ -15,8 +15,7 @@ class GtmConfigController extends Controller
         $email = $request->input('gtm_ssl_email');
         $config = $request->input('gtm_config_id'); // base64 or GTM-ID
 
-        $scriptPath = '/home/dewan/Music/deploy.sh';
-
+        $scriptPath = base_path('deploy.sh');
         $process = new Process([$scriptPath, $domain, $port, $email, $config]);
         $process->setTimeout(300); // 5 minutes
         $process->run();
